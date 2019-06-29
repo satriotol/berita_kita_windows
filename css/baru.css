@@ -230,7 +230,6 @@ div.main-page-slider a:hover {
 .posts-container {
 	display: block;
 	padding: 0;
-	width: 70%;
 	height: auto;
 }
 
@@ -363,7 +362,7 @@ h3.post-title a {
 /* .aside. */
 
 aside {
-	width: 40%;
+	width: 100%;
 	height: auto;
 	margin-left: 5%;
 	float: right;
