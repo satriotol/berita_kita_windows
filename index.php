@@ -125,10 +125,9 @@ if (isset($_POST["cari"])){
     </section>
 
     <div class="contact-us-wrapper" id="contact-us">
-        <div class="row">
-            <div class="col-sm-offset-4 col-sm-4">
-                <h1 style="color: white">Hubungi Kami</h1>
-                <?php
+        <div class="col-sm-offset-4 col-sm-4">
+            <h1 style="color: white">Hubungi Kami</h1>
+            <?php
                 if(isset($_POST["submit"])){
                     // cek apakah data berhasil ditambahkan atau tidak
                     if(tambah_pesan($_POST)>0){
@@ -141,24 +140,23 @@ if (isset($_POST["cari"])){
                     }
                 }
             ?>
-                <form class="text-center" id="contact" action="" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <input class="form-control" placeholder="Nama" type="text" name="nama_pengirim"
-                            id="nama_pengirim" required placeholder="Nama">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" placeholder="Email" type="text" name="email_pengirim"
-                            id="email_pengirim" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" style="resize: vertical;" placeholder="Pesan" name="isi_pesan" id="isi_pesan"
-                            required></textarea>
-                    </div>
-                    <input class="btn btn-primary-mb2" type="hidden" name="tanggal_pengirim" required
-                        value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
-                    <input class="btn btn-primary center" type="submit" name="submit" value="Kirim">
-                </form>
-            </div>
+            <form class="text-center" id="contact" action="" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Nama" type="text" name="nama_pengirim" id="nama_pengirim"
+                        required placeholder="Nama">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Email" type="text" name="email_pengirim"
+                        id="email_pengirim" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" style="resize: vertical;" placeholder="Pesan" name="isi_pesan"
+                        id="isi_pesan" required></textarea>
+                </div>
+                <input class="btn btn-primary-mb2" type="hidden" name="tanggal_pengirim" required
+                    value=<?php date_default_timezone_set("Asia/Jakarta"); echo date ("Y/m/d.h:i:sa");?>>
+                <input class="btn btn-primary center" type="submit" name="submit" value="Kirim">
+            </form>
         </div>
     </div>
 
