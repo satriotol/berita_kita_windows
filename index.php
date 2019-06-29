@@ -150,7 +150,7 @@ if (isset($_POST["cari"])){
                         id="email_pengirim" required>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" style="resize: vertical;" placeholder="Pesan" name="isi_pesan"
+                    <textarea class="form-control" style="resize: vertical;margin-top: 0px;margin-bottom: 0px;height: 170px;" placeholder="Pesan" name="isi_pesan"
                         id="isi_pesan" required></textarea>
                 </div>
                 <input class="btn btn-primary-mb2" type="hidden" name="tanggal_pengirim" required
