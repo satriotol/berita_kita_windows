@@ -42,13 +42,6 @@
     }
 
     /* ISI */
-    @media screen and (max-width: 768px) {
-        article .row {
-            margin-left: 25px;
-            display: block;
-        }
-    }
-
     .isi {
         margin-top: 86px;
     }
@@ -74,11 +67,16 @@
         height: 200px;
     }
 
-    article .row {
+    .contoh-berita {
         margin-top: 25px;
         margin-bottom: 25px;
         flex-wrap: nowrap;
-
+        display: flex;
+    }
+    @media screen and (max-width: 700px) {
+        .contoh-berita {
+            display: block;
+        }
     }
 
     .row .col-sm-8 {
@@ -200,7 +198,7 @@
                 <div class="row">
                     <div class="col-sm-8" style="text-align: justify">
                         <article>
-                            <div class="row">
+                            <div class="contoh-berita">
                                 <div class="foto-berita">
                                     <a href="">
                                         <img class="img-berita" src="upload/1.png" alt="">
@@ -228,7 +226,7 @@
                             </div>
                         </article>
                         <article>
-                            <div class="row">
+                            <div class="contoh-berita">
                                 <div class="foto-berita">
                                     <a href="">
                                         <img class="img-berita" src="upload/1.png" alt="">
@@ -236,7 +234,9 @@
                                 </div>
                                 <div class="tampilan-berita">
                                     <div class="p-berita">
-                                        <h2>JUDUL</h2>
+                                        <a href="">
+                                            <h2>JUDUL</h2>
+                                        </a>
                                         <p>Tanggal</p>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
@@ -256,11 +256,15 @@
                     </div>
                     <div class="col-sm-4">
                         <h2 class="text-center main-page-title">VIDEO HMPTK</h2>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere veniam voluptatibus
-                        totam
-                        itaque! Velit vero voluptatibus magni. Veniam autem quam perspiciatis, recusandae dolorum ipsam
-                        unde
-                        voluptatem explicabo molestias placeat!
+                        <p style="text-align: justify">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere veniam voluptatibus
+                            totam
+                            itaque! Velit vero voluptatibus magni. Veniam autem quam perspiciatis, recusandae dolorum
+                            ipsam
+                            unde
+                            voluptatem explicabo molestias placeat!
+                        </p>
+
                         <h2 class="text-center main-page-title">PENGUMUMAN</h2>
                         <article>
                             <a href="">
