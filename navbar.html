@@ -12,8 +12,12 @@
 </head>
 <style>
     /* NAVBAR */
-    a {
+    .navbar a {
         color: white;
+    }
+
+    a.dropdown-item {
+        color: #1295C9;
     }
 
     .activeMenuItem {
@@ -69,15 +73,28 @@
 
     }
 
-    .row .col-sm-8 article {
-        border-bottom: 1px solid;
+    .row .col-sm-8 {
+        border-right: 1px solid grey;
     }
+
+    .row .col-sm-8 article {
+        border-bottom: 1px solid grey;
+    }
+
+    .p-berita {
+        margin-right: 15px;
+    }
+
+    /* side-bar */
     /* footer */
-    .footer{
+    .kontak {
+        padding-top: 50px;
+    }
+
+    .footer {
         margin-top: 50px;
         color: white;
     }
-
 </style>
 
 <body>
@@ -121,6 +138,11 @@
                             </div>
                         </li>
                     </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Masukan Kata Kunci"
+                            aria-label="Search">
+                        <button class="btn btn-warning my-2 my-sm-0" type="submit">Cari</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -136,7 +158,7 @@
         <section class="isi-berita">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="text-align: justify">
                         <article>
                             <div class="row">
                                 <div class="foto-berita">
@@ -145,18 +167,24 @@
                                     </a>
                                 </div>
                                 <div class="tampilan-berita">
-                                    <h2>JUDUL</h2>
-                                    <p>Tanggal</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
-                                        tempore.
-                                        Dolore
-                                        eveniet
-                                        cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla beatae
-                                        quidem
-                                        placeat
-                                        eaque quibusdam quisquam?
-                                    </p>
+                                    <div class="p-berita">
+                                        <a href="">
+                                            <h2>JUDUL</h2>
+                                        </a>
+
+                                        <p>Tanggal</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
+                                            tempore.
+                                            Dolore
+                                            eveniet
+                                            cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla
+                                            beatae
+                                            quidem
+                                            placeat
+                                            eaque quibusdam quisquam?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -168,28 +196,50 @@
                                     </a>
                                 </div>
                                 <div class="tampilan-berita">
-                                    <h2>JUDUL</h2>
-                                    <p>Tanggal</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
-                                        tempore.
-                                        Dolore
-                                        eveniet
-                                        cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla beatae
-                                        quidem
-                                        placeat
-                                        eaque quibusdam quisquam?
-                                    </p>
+                                    <div class="p-berita">
+                                        <h2>JUDUL</h2>
+                                        <p>Tanggal</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
+                                            tempore.
+                                            Dolore
+                                            eveniet
+                                            cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla
+                                            beatae
+                                            quidem
+                                            placeat
+                                            eaque quibusdam quisquam?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                     </div>
                     <div class="col-sm-4">
+                        <h2 class="text-center main-page-title">VIDEO HMPTK</h2>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere veniam voluptatibus
                         totam
                         itaque! Velit vero voluptatibus magni. Veniam autem quam perspiciatis, recusandae dolorum ipsam
                         unde
                         voluptatem explicabo molestias placeat!
+                        <h2 class="text-center main-page-title">PENGUMUMAN</h2>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nisi illo doloremque vel eveniet
+                        provident laudantium beatae tenetur? Velit quibusdam ipsa unde dolor aut nam aliquid repellat et
+                        sapiente soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsam quae
+                        illum, velit molestiae atque, aliquid vel vitae voluptatibus excepturi quaerat culpa eligendi
+                        reprehenderit exercitationem delectus quis accusamus. Temporibus, tenetur. Lorem ipsum dolor
+                        sit, amet consectetur adipisicing elit. Ipsa eius voluptate similique nostrum, aut cupiditate
+                        quos libero repellendus ipsam? Quis, quisquam recusandae aspernatur voluptate dicta animi saepe
+                        corrupti praesentium culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima
+                        non dicta culpa. Repellendus saepe eaque quas velit esse incidunt error inventore, eius, non
+                        iste nam? Laborum amet facere tenetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Nihil atque harum maxime enim perferendis ullam dolorum, doloribus, officiis optio iusto rem
+                        laboriosam facere veritatis perspiciatis velit accusantium officia fugiat ad? Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Maxime doloribus blanditiis nisi voluptatum,
+                        exercitationem esse eum eos aliquid, natus nemo officia? Sint cumque aliquid nostrum repudiandae
+                        molestiae voluptatum modi perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aliquid laborum tempore vero incidunt ipsam? Ad adipisci nam tempore aliquid expedita.
+                        Incidunt esse necessitatibus sint quasi voluptas quas repudiandae, voluptatibus illo.
                     </div>
                 </div>
             </div>
@@ -209,7 +259,8 @@
                                 <input type="text" class="form-control" placeholder="E-mail">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="" id="" rows="5" placeholder="Isi Pesan"></textarea>
+                                <textarea class="form-control" name="" id="" rows="5"
+                                    placeholder="Isi Pesan"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</buttons>
                         </form>
