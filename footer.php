@@ -24,7 +24,6 @@
 						href="instagram.com/profile/krotidesian.id">KROTIDESIAN</a></p>
 			</div>
 		</div>
-
 	</div>
 	</div>
 </footer>

@@ -11,6 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <style>
+    /* NAVBAR */
     a {
         color: white;
     }
@@ -30,6 +31,45 @@
 
     .custom-toggler.navbar-toggler {
         border-color: #fed136;
+    }
+
+    /* ISI */
+    .isi {
+        margin-top: 86px;
+    }
+
+    .main-page-title {
+        padding: 1.25%;
+        background-color: rgb(18, 129, 173);
+        color: white;
+    }
+    .isi-berita{
+        margin-top: 25px;
+    }
+
+    .foto-berita {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-berita {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tampilan-berita {
+        margin-left: 20px;
+    }
+
+    article .row {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        flex-wrap: nowrap;
+
+    }
+
+    .row .col-sm-8 article {
+        border-bottom: 1px solid;
     }
 </style>
 
@@ -60,23 +100,93 @@
                             <a class="nav-link" href="isi_data_alumni.php">ALUMNI</a>
                         </li>
                         <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    ABOUT
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="aboutus">ABOUT</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="menu_kabinet.php">KABINET</a>
-                                    <a class="dropdown-item" href="menu_departement">DEPARTEMEN</a>
-                                    <a class="dropdown-item" href="http://tekkim.unnes.ac.id">JURUSAN</a>
-                                    <a class="dropdown-item" href="kontak_kami.php">KONTAK</a>
-                                </div>
-                            </li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="aboutus">ABOUT</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="menu_kabinet.php">KABINET</a>
+                                <a class="dropdown-item" href="menu_departement">DEPARTEMEN</a>
+                                <a class="dropdown-item" href="http://tekkim.unnes.ac.id">JURUSAN</a>
+                                <a class="dropdown-item" href="kontak_kami.php">KONTAK</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </section>
+    <section class="isi">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-4 col-sm-4 text-center">
+                    <h2 class="main-page-title">PRESS RELEASE</h2>
+                </div>
+            </div>
+        </div>
+        <section class="isi-berita">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <article>
+                            <div class="row">
+                                <div class="foto-berita">
+                                    <a href="">
+                                        <img class="img-berita" src="upload/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="tampilan-berita">
+                                    <h2>JUDUL</h2>
+                                    <p>Tanggal</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
+                                        tempore.
+                                        Dolore
+                                        eveniet
+                                        cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla beatae
+                                        quidem
+                                        placeat
+                                        eaque quibusdam quisquam?
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="row">
+                                <div class="foto-berita">
+                                    <a href="">
+                                        <img class="img-berita" src="upload/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="tampilan-berita">
+                                    <h2>JUDUL</h2>
+                                    <p>Tanggal</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quia
+                                        tempore.
+                                        Dolore
+                                        eveniet
+                                        cupiditate ex at nobis tempora voluptatum quaerat, a laborum labore nulla beatae
+                                        quidem
+                                        placeat
+                                        eaque quibusdam quisquam?
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere veniam voluptatibus
+                        totam
+                        itaque! Velit vero voluptatibus magni. Veniam autem quam perspiciatis, recusandae dolorum ipsam
+                        unde
+                        voluptatem explicabo molestias placeat!
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- Optional JavaScript -->
