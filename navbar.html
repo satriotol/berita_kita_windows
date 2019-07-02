@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     a {
@@ -18,6 +20,10 @@
     /* NAVBAR */
     .navbar a {
         color: white;
+    }
+
+    .navbar a:hover {
+        color: #fed136;
     }
 
     a.dropdown-item {
@@ -39,6 +45,24 @@
 
     .custom-toggler.navbar-toggler {
         border-color: #fed136;
+    }
+
+    /* slide */
+    .slide {
+
+        margin-top: 70px;
+    }
+
+
+    @media screen and (max-width: 700px) {
+        .navbar-brand img {
+            width: auto;
+            height: 40px;
+        }
+
+        .slide {
+            margin-top: 50px;
+        }
     }
 
     /* ISI */
@@ -65,6 +89,7 @@
     .img-berita {
         width: 200px;
         height: 200px;
+        object-fit: cover;
     }
 
     .contoh-berita {
@@ -72,17 +97,6 @@
         margin-bottom: 25px;
         flex-wrap: nowrap;
         display: flex;
-    }
-
-    @media screen and (max-width: 700px) {
-        .contoh-berita {
-            display: block;
-        }
-
-        .foto-berita {
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
 
     .row .col-sm-8 {
@@ -97,15 +111,82 @@
         margin-right: 15px;
     }
 
-    /* side-bar */
+    .p-berita a:hover {
+        color: #fed136;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 700px) {
+        .contoh-berita {
+            display: block;
+        }
+
+        .foto-berita {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tampilan-berita h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .tampilan-berita p {
+            font-size: 12px;
+        }
+    }
+
     /* footer */
     .kontak {
         padding-top: 50px;
+        background: #048BC1;
+        background: -moz-linear-gradient(top, #048BC1 0%, #035A7C 44%, #02415A 100%);
+        background: -webkit-linear-gradient(top, #048BC1 0%, #035A7C 44%, #02415A 100%);
+        background: linear-gradient(to bottom, #048BC1 0%, #035A7C 44%, #02415A 100%);
     }
 
     .footer {
         margin-top: 50px;
         color: white;
+
+    }
+
+    /* social media */
+    .social-media a {
+        margin-right: 10px;
+        margin-left: 10px;
+        border: #fed13665 1px solid;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        line-height: 21px;
+    }
+
+    .social-media a:hover {
+        color: #fed136;
+        text-decoration: none;
+    }
+
+    .circle {
+        border: solid;
+        border-radius: 18px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .copyright-krotidesian {
+        text-align: right;
+        margin-top: 25px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .copyright-krotidesian {
+            text-align: center;
+        }
+
+        .alamat-email p {
+            text-align: center;
+        }
     }
 </style>
 
@@ -159,7 +240,7 @@
             </div>
         </nav>
     </section>
-    <section class="slide" style="margin-top: 70px;">
+    <section class="slide">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -207,7 +288,7 @@
                             <div class="contoh-berita">
                                 <div class="foto-berita">
                                     <a href="">
-                                        <img class="img-berita" src="upload/1.png" alt="">
+                                        <img class="img-berita" src="upload/default.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="tampilan-berita">
@@ -235,7 +316,7 @@
                             <div class="contoh-berita">
                                 <div class="foto-berita">
                                     <a href="">
-                                        <img class="img-berita" src="upload/1.png" alt="">
+                                        <img class="img-berita" src="upload/HIMPRO-logo.png" alt="">
                                     </a>
                                 </div>
                                 <div class="tampilan-berita">
@@ -292,7 +373,7 @@
         </section>
     </section>
     <section class="footer">
-        <section class="kontak" style="background-color: rgb(2, 65, 90)">
+        <section class="kontak">
             <div class="container">
                 <div class="row">
                     <div class="text-center offset-sm-4 col-sm-4">
@@ -314,10 +395,28 @@
                 </div>
             </div>
         </section>
-        <section style="background-color: rgb(2, 65, 90)">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni nam delectus facilis quibusdam quidem rem
-            minima aliquid vel, suscipit molestiae totam, sapiente ipsa id quaerat ullam. Illum odit dignissimos
-            sapiente.
+        <section class="footer-bottom" style="background-color: #02415A;padding-top: 50px; color: #B7B7B7">
+            <div class="container-fluid">
+                <div class="row" style="font-family: 'Open Sans', sans-serif;font-size: 15px;">
+                    <div class="alamat-email col-sm-4">
+                        <p>GD. PKM FT-UNIVERSITAS NEGERI SEMARANG, SEKARAN, GUNUNGPATI</p>
+                        <p>HIMATEKKIMUNNES@GMAIL.COM</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <p>Social Media</p>
+                        <div class="social-media">
+                            <a class="fa fa-linkedin" href="" target="_blank"></a>
+                            <a class="fa fa-instagram" href="https://www.instagram.com/hmptkunnes/" target="_blank"></a>
+                            <a class="fa fa-twitter" href="https://twitter.com/hmptkunnes" target="_blank"></a>
+                            <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCrKh08laDzT9rvsqUjzHnAw"
+                                target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="copyright-krotidesian col-sm-4">
+                        Made by <a href="">Krotidesian</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
 
