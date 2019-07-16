@@ -27,25 +27,25 @@ if(!isset($_SESSION["login"])){
 
 <body>
     <div class="topnav">
-        <a class="nav-link" href="/berita_kita/admin/index.php">Home</a>
-        <a class="nav-link" href="/berita_kita/admin/list_berita.php">List Berita</a>
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="list_berita.php">List Berita</a>
         <div class="dropdown">
             <button class="dropbtn">Slide
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a class="nav-link" href="/berita_kita/admin/list_slide.php">Home</a>
-                <a class="nav-link" href="/berita_kita/admin/list_slide_article.php">Article</a>
-                <a class="nav-link" href="/berita_kita/admin/list_slide_chemengfair.php">Chemengfair</a>
-                <a class="nav-link" href="/berita_kita/admin/list_slide_departement.php">Departement</a>
+                <a class="nav-link" href="list_slide.php">Home</a>
+                <a class="nav-link" href="list_slide_article.php">Article</a>
+                <a class="nav-link" href="list_slide_chemengfair.php">Chemengfair</a>
+                <a class="nav-link" href="list_slide_departement.php">Departement</a>
             </div>
         </div>
-        <a class="nav-link" href="/berita_kita/admin/list_admin.php">List Admin</a>
-        <a class="nav-link" href="/berita_kita/admin/list_alumni.php">List Alumni</a>
-        <a class="nav-link" href="/berita_kita/admin/list_subberita.php">List Sub Berita</a>
-        <a class="nav-link" href="/berita_kita/admin/list_pesan.php">List Pesan</a>
-        <a class="nav-link" href="/berita_kita/admin/list_video.php">List Video</a>
-        <a style="float:right" class="red-logout" href="/berita_kita/admin/logout.php">LOGOUT</a>
+        <a class="nav-link" href="list_admin.php">List Admin</a>
+        <a class="nav-link" href="list_alumni.php">List Alumni</a>
+        <a class="nav-link" href="list_subberita.php">List Sub Berita</a>
+        <a class="nav-link" href="list_pesan.php">List Pesan</a>
+        <a class="nav-link" href="list_video.php">List Video</a>
+        <a style="float:right" class="red-logout" href="logout.php">LOGOUT</a>
     </div>
 </body>
 
